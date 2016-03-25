@@ -3,6 +3,7 @@
 <%= form_for :article, url: articles_path do |f| %>
 
 <% if @article.errors.any? %>
+    <center>
     <div id="error_explanation">
       <h2>
         <%= pluralize(@article.errors.count, "error") %> prohibited
@@ -14,6 +15,7 @@
         <% end %>
       </ul>
     </div>
+    </center>
   <% end %>
 
  <center> <p>
