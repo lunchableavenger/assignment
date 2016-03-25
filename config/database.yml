@@ -15,8 +15,8 @@ development:
   <<: *default
   database: my_database_development
 
-username: postgresql
-password: lunchable
+  username: postgresql
+  password: lunchable
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -25,8 +25,8 @@ test:
   <<: *default
   database: my_database_test
 
-username: postgresql
-password: lunchable
+  username: postgresql
+  password: lunchable
 
 production:
   <<: *default
