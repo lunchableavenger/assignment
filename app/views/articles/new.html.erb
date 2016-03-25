@@ -1,8 +1,8 @@
 <center><h1>Send a Text!</h1></center>
 
-<center><%= form_for :article, url: articles_path do |f| %></center>
+<%= form_for :article, url: articles_path do |f| %>
 
-<center><% if @article.errors.any? %></center>
+<% if @article.errors.any? %>
     <div id="error_explanation">
       <h2>
         <%= pluralize(@article.errors.count, "error") %> prohibited
